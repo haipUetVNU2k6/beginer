@@ -130,4 +130,3 @@ def reader(song, startLabel):
 
 
 reader(song_flag_hunters, '[VERSE1]')
-#song_lines = song_flag_hunters.splitlines()
