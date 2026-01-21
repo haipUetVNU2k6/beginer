@@ -1,0 +1,11 @@
+<+0>:     endbr64 
+<+4>:     push   rbp    #  Đẩy nội dung mà rbp chứa vào stack
+<+5>:     mov    rbp,rsp # gán rbp = rsp 
+<+8>:     mov    DWORD PTR [rbp-0x4],edi # ghi nội dung thanh edi(32- bit) vào giá trị của nội dung con trỏ tại địa chỉ rbp - 0x4
+<+11>:    mov    QWORD PTR [rbp-0x10],rsi # ghi nội dung thanh ghi rsi (64 -bit) vào giá trị của nội dung con trỏ tại địa chỉ rbp - 0x10
+<+15>:    mov    eax,0x30 # gán eax = 0x30
+<+20>:    pop    rbp # đẩy hàm ra
+<+21>:    ret # kết thúc hàm
+
+solve : quá dễ eax có nội dung 0x30 (hệ hexdec) sang 48 (hệ 10)
+FLAG : picoCTF{48}
